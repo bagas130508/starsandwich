@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandwich Fruit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            height: 600px;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 24px;
+            color: #228B22;
+            border: 2px solid #228B22;
+            padding: 10px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            width: 40%;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .empty-box {
+            width: 100%;
+            height: auto;
+            background-color: #87CEFA;
+            border-radius: 10px;
+            margin-top: 30px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .empty-box h2 {
+            margin-bottom: 15px;
+        }
+
+        .empty-box ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .empty-box li {
+            font-size: 16px;
+            color: #555;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">STAR SANDWICH</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTC6UUfYR9gBDb4sOW7sR4V_HBnThr8LdP1zvJIcR0RkC88P7aUTzaGXb&s=10" alt="Sandwich 1">
+                <p>Best Quality</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTC6UUfYR9gBDb4sOW7sR4V_HBnThr8LdP1zvJIcR0RkC88P7aUTzaGXb&s=10" alt="Sandwich 2">
+                <p>Natural Ingredients</p>
+            </div>
+        </div>
+        <div class="empty-box">
+            <h2>Varian Harga:</h2>
+            <ul>
+                <li>Fruit Sando Stroberi - <span>Rp 7.500</span></li>
+                <li>Fruit Sando Anggur - <span>Rp 7.500</span></li>
+                <li>Fruit Sando Pisang - <span>Rp 7.500</span></li>
+                <li>Fruit Sando Mix - <span>Rp 7.500</span></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
