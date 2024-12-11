@@ -9,19 +9,19 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            background:#00ccff;
+        
         }
 
         .container {
             width: 80%;
             max-width: 900px;
-            height: 700px;
+            height: auto;
             text-align: center;
-            background-color: #ffffff;
+            background-color: aliceblue;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -34,16 +34,19 @@
             padding: 10px;
             display: inline-block;
             margin-bottom: 20px;
+            border-radius: 20px;
         }
 
         .card-container {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
 
         .card {
-            width: 40%;
+            width: 80%;
             background-color: #f9f9f9;
             padding: 10px;
             border-radius: 10px;
@@ -61,53 +64,35 @@
             font-size: 16px;
             color: #555;
         }
-
-        .buy-button {
-            margin: 20px auto;
-            display: inline-block;
-        }
-
-        .buy-button button {
-            background-color: #228B22;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .buy-button button:hover {
-            background-color: #1e7e1e;
-        }
-
-        .empty-box {
-            width: 100%;
-            height: auto;
-            background-color: #87CEFA;
-            border-radius: 10px;
-            margin-top: 30px;
-            padding: 0px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .empty-box h2 {
-            margin-bottom: 15px;
-        }
-
-        .empty-box ul {
-            list-style-type: none;
-            padding: 0;
+        
+        .f {
+            display: flexbox;
+            justify-content: center;
+            gap: 10px;
             text-align: center;
+            margin-top: 40px;
+        }
+        .bicon {
+            margin-right: 5px;
+            height: 35px;
+            width: 35px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: white;
+            display:flexbox;
+            align-items:center;
+            justify-content: center;
+            margin-top: 10px; 
+        }
+        .icon {
+            width: 78%;
+            height: 78%;
+            margin-top:2px;
+            
         }
 
-        .empty-box li {
-            font-size: 16px;
-            color: #555;
-            margin: 5px 0;
-        }
+        
+        
     </style>
 </head>
 <body>
@@ -115,28 +100,49 @@
         <h1 class="title">STAR SANDWICH</h1>
         <div class="card-container">
             <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTC6UUfYR9gBDb4sOW7sR4V_HBnThr8LdP1zvJIcR0RkC88P7aUTzaGXb&s=10" alt="Sandwich 1">
-                <p>Best Quality</p>
+                <img src="https://i.imgur.com/CuDldEt_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Sandwich 1">
+                <h4>SANDWICH ANGGUR</h4>
+                 <a
+href="https://wa.me/6285715552613?text= sandwich%20sando%20varian %20anggur"><button>BUY</button></a>
+
             </div>
             <div class="card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCTC6UUfYR9gBDb4sOW7sR4V_HBnThr8LdP1zvJIcR0RkC88P7aUTzaGXb&s=10" alt="Sandwich 2">
-                <p>Natural Ingredients</p>
+                <img src="https://i.imgur.com/CuO8eo8_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Sandwich 2">
+                <h4>SANDWICH STRAWBERRY</h4>
+                 <a
+ href="https://wa.me/6285715552613?text= sandwich%20sando%20varian %20strawberry"><button>BUY</button></a>               
+
+            </div>
+            <div class="card">
+                <img src="https://i.imgur.com/xVCmHKY_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Sandwich 2">
+                <h4>SANDWICH PISANG</h4>
+                <a href="https://wa.me/6285715552613?text= sandwich%20sando%20varian %20pisang"><button>BUY</button></a>
+
+            </div>
+            <div class="card">
+                <img src="https://i.imgur.com/EFneqKI_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Sandwich 2">
+                <h4>MIX SANDWiCH</h4>
+                <a
+  href="https://wa.me/6285715552613?text= sandwich%20sando%20mix %20sandwich"><button>BUY</button></a>             
             </div>
         </div>
-        <div class="buy-button">
-            <a href="https://wa.me/6285715552613?text=sandwich%20sando%20varian%20anggur">
-                <button>BUY</button>
-            </a>
-        </div>
-        <div class="empty-box">
-            <h2>Varian Harga:</h2>
-            <ul>
-                <li>Fruit Sando Stroberi - <span>Rp 7.500</span></li>
-                <li>Fruit Sando Anggur - <span>Rp 7.500</span></li>
-                <li>Fruit Sando Pisang - <span>Rp 7.500</span></li>
-                <li>Fruit Sando Mix - <span>Rp 7.500</span></li>
-            </ul>
-        </div>
+      <div class="f" id="contact">    
+        <h4>CONTACT US</h4>
+        <a href="https://api.whatsapp.com/send/?phone=%2B6285715552613&text&type=phone_number&app_absent=0" ><button class="bicon"><img src="https://cdn1.iconfinder.com/data/icons/apps-8/64/whatsapp-wa-apps-platform-128.png" class="icon"></button></a>
+        <a href="" ><button class="bicon"><img src="https://cdn1.iconfinder.com/data/icons/apps-8/64/instagram-ig-apps-platform-128.png" class="icon"></button></a>
+        <a href="mailto:starsandwich01@gmail.com" ><button class="bicon"><img src="https://cdn0.iconfinder.com/data/icons/social-media-and-logos-11/32/Gmail_envelope_letter_email_Gmail_envelope_letter_email-128.png" class="icon"></button></a>
+      <a href="https://maps.app.goo.gl/826VmNZYtxRTP6Ui9" target="_blank">
+    <button class="bicon">
+        <img src="https://cdn1.iconfinder.com/data/icons/twitter-ui-colored/48/JD-22-128.png" class="icon">
+    </button>
+</a>
+    
     </div>
+    <div class="alamat" id="address">
+        <h4>ADDRESS</h4>
+        <h6>Dekat Toko Gorden Tati Jaya, deket Klinik Aqma sebrang toko playstation, Jl. Raya Cikampek-Parakan, Cikampek Kota, Kec. Cikampek, Karawang, Jawa Barat 41373</h6>
 </body>
 </html>
+
+
+                
